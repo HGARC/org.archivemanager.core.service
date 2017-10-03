@@ -1,0 +1,11 @@
+<project name="org.archivemanager.core.service" basedir="." default="deploy">
+	<property name="module.version" value="3.0.0" />
+	<property name="dist.dir" value="target" />
+	
+	<import file="../../build-common.xml"/>
+	
+	<target name="deploy" depends="mvn clean package">
+		<!--antcall target="deploy-pickup" /-->
+	</target>
+	
+</project>
